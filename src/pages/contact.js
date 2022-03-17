@@ -36,7 +36,7 @@ const Contact = () => {
                 <input type="text" name="name" id="name"></input>
               </div>
               <div className="form-row">
-                <label htmlFor="name">Your Email</label>
+                <label htmlFor="email">Your Email</label>
                 <input type="email" name="message" id="email"></input>
               </div>
               <div className="form-row">
