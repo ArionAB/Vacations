@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout/layout"
 import { StaticImage } from "gatsby-plugin-image"
+import AllDestinations from "../components/AllDestinations/allDestinations"
 
 //all export must be default
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
             </div>
           </div>
         </header>
+        <AllDestinations />
       </main>
       <Link to="/about">About</Link>
     </Layout>
