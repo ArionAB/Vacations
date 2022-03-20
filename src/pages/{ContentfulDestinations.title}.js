@@ -4,6 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { AiOutlineDollarCircle } from "react-icons/ai"
 import { FiMapPin } from "react-icons/fi"
 import Layout from "../components/Layout/layout"
+import slugify from "slugify"
 
 const DestinationTemplate = ({ data }) => {
   const {
@@ -44,8 +45,10 @@ const DestinationTemplate = ({ data }) => {
               <p className="recipe-tags">
                 Tags :{" "}
                 {tags.map((tag, index) => {
+                  const slug = slugify(tag, { lower: true })
+                  //nu asta e problema
                   return (
-                    <Link to={`/${tag}`} key={index}>
+                    <Link to={`/tags/${slug}`} key={index}>
                       {tag}
                     </Link>
                   )

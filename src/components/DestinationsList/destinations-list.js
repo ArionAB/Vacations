@@ -10,8 +10,9 @@ const DestinationsList = ({ node = [] }) => {
         const { content, coord, id, photo, price, tipsTricks, title } = dest
         const pathToImage = getImage(photo)
         const slug = slugify(title, { lower: true })
+
         return (
-          <Link to={`/${title}`} className="recipe" key={id}>
+          <Link to={`/${slug}`} className="recipe" key={id}>
             <GatsbyImage
               image={pathToImage}
               className="recipe-img"
