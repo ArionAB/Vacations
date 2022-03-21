@@ -1,21 +1,21 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
 import { StaticImage } from "gatsby-plugin-image"
-import { Link, GatsbyImage, graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import DestinationsList from "../components/DestinationsList/destinations-list"
-
+import SEO from "../components/SEO"
 const About = ({ data }) => {
   const node = data.allContentfulDestinations.nodes
   //data comes from the query at the bottom of the page
 
   return (
     <Layout>
+      <SEO title="About" description="this is About page" />
       <main className="page">
         <section className="about-page">
           <article>
             <h2>
-              Cornhole pop-up copper mug, mixtape tumeric iceland selfies ugh
-              organic locavore skateboard chillwave farm-to-table.
+              Cornhole pop-up copper mug, mixtape tumeric iceland selfies.
             </h2>
             <p>
               Gochujang +1 bitters butcher cray. Everyday carry synth distillery

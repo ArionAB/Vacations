@@ -1,15 +1,17 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
-import { Link, GatsbyImage, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import DestinationsList from "../components/DestinationsList/destinations-list"
+import SEO from "../components/SEO"
 
 const Contact = ({ data }) => {
   const node = data.allContentfulDestinations.nodes
   return (
     <Layout>
-      <main className="contact-page">
-        <section>
-          <article>
+      <SEO title="Contact" />
+      <main className="page">
+        <section className="contact-page">
+          <article className="contact-info">
             <h3>Want To Get In Touch?</h3>
 
             <p>

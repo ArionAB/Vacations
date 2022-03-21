@@ -5,6 +5,7 @@ import { AiOutlineDollarCircle } from "react-icons/ai"
 import { FiMapPin } from "react-icons/fi"
 import Layout from "../components/Layout/layout"
 import slugify from "slugify"
+import SEO from "../components/SEO"
 
 const DestinationTemplate = ({ data }) => {
   const {
@@ -19,6 +20,7 @@ const DestinationTemplate = ({ data }) => {
   const { tags, tips } = content
   return (
     <Layout>
+      <SEO title={title} />
       <main className="page">
         <div className="recipe-page">
           <section className="recipe-hero">
